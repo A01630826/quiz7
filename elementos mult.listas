@@ -1,0 +1,27 @@
+def dot_product (lista1,lista2):
+    if len(lista1)!= len(lista2):
+        return float('NaN') #not a number
+    else:
+        for i in range(len(lista1)): 
+            lista_mult.append(lista1[i]*lista2[i])#mult listas
+        print ("lista_mult", lista_mult)
+        suma=0
+        for i in lista_mult: #suma listas
+            suma += i
+        return suma
+
+def listas (num,lista):
+    for i in range (num): #en rango de la cantidad de elementos
+        nu=int(input("ingresa un numero: "))
+        lista.append(nu) #agregar ese nuevo numero
+    return lista
+
+lista_mult=[]
+lista1=[]
+lista2=[]
+num1=int(input("Cuantos numeros tiene la lista1"))  #elementos que tendra cada lista
+num2=int(input("Cuantos numeros tiene la lista2"))
+
+print (listas(num1,lista1))
+print (listas(num2,lista2))
+print ("suma de la multiplicacion de cada elemento: ", (dot_product(lista1,lista2)))
